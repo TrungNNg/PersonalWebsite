@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
+/*body background: #303A52
+nav background: #2C354A
+panel background: #39445F
+text color: white
+text color/button backgound: #FC85AE*/
+
 * {
     box-sizing: border-box;
 }
@@ -32,10 +38,29 @@ a {
 
 h1 {
     color: white;
+    margin-top: 1em;
+}
+
+h3 {
+    color: #FC85AE;
+    font-size: 1.5em;
 }
 
 .inner-wrapper {
     padding: 1em;
+}
+
+span {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+img {
+    margin-top: 1em;
+    width: 5em;
+    height: 5em;
+    border-radius: 0.5em;
 }
 
 /*======= NAV BAR =======*/
@@ -76,6 +101,11 @@ header {
     justify-content: center;
 }
 
+#name {
+    text-decoration: underline;
+    text-decoration-color: #FC85AE;
+}
+
 svg {
     width: 1.5em;
     cursor: pointer;
@@ -109,3 +139,38 @@ p {
     line-height: 1.6em;
 }
 
+.data {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-btn {
+    padding: 0.5em 1em;
+    border: 1px solid #FC85AE;
+    background: transparent;
+    border-radius: 0.5em;
+    font-size: 0.7em;
+}
+
+.project-panel {
+    padding: 2em 4em;
+}
+
+.project-btn:hover{
+    background: #FC85AE;
+    font-size: 0.8em;
+    font-weight: bolder;
+    border: 1px solid white;
+}
+
+/*=========== MEDIA QUERY =========*/
+
+@media (min-width: 320px){
+    .project-btn{
+        font-size: 1.2em;
+    }
+
+    .project-btn:hover{
+        font-size: 1.4em;
+    }
+}
