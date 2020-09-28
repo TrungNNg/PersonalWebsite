@@ -30,6 +30,10 @@ ul{
     list-style: none;
 }
 
+li {
+    text-align: center;
+}
+
 a {
     padding: 0;
     text-decoration: none;
@@ -94,6 +98,9 @@ nav li a{
     display: block;
 }
 
+nav li a:hover{
+    color: #FC85AE;
+}
 /*======= HEADER =======*/
 header {
     display: flex;
@@ -153,12 +160,12 @@ p {
 }
 
 .project-panel {
+    text-align: center;
     padding: 2em 4em;
 }
 
 .project-btn:hover{
     background: #FC85AE;
-    font-size: 0.8em;
     font-weight: bolder;
     border: 1px solid white;
 }
@@ -172,5 +179,71 @@ p {
 
     .project-btn:hover{
         font-size: 1.4em;
+    }
+}
+
+@media (min-width: 420px){
+    body {
+        text-align: left;
+        padding: 1em;
+    }
+
+    .data {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 550px) {
+    nav {
+        width: 40%;
+    }
+    nav ul li{
+        text-align: left;
+    }
+}
+
+@media (min-width: 720px) {
+    body {
+        padding: 1.5em;
+    }
+    nav {
+        width: 30%;
+    }
+}
+
+@media (min-width: 850px) {
+    body {
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: 70px auto;
+        grid-template-areas:
+            "sidebar header"
+            "sidebar main";
+        padding: 0;
+    }
+    
+    header, main {
+        padding: 1.5em;
+    }
+    
+    nav {
+        grid-area: sidebar;
+        opacity: 1;
+        visibility: unset;
+        transform: translateX(0);
+        width: 100%;
+        position: unset;
+    }
+    
+    header {
+        grid-area: header;
+    }
+    
+    main {
+        grid-area: main;
+    }
+    svg {
+        display: none;
     }
 }
