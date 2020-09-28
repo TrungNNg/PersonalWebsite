@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
+/*
+    //dark
+    --body-bg: #303A52;
+    --panel-bg: #39445F;
+    --nav-bg: #2C354A;
+    --text-primary: #ffffff;
+    --text-secondary: #A5B2D3;
+    --text-bg: #FC85AE;
+    --svg-fill: #ffffff;
+
+    //light
+    --body-bg: #ffffff;
+    --panel-bg: #6baec5;
+    --nav-bg: #ffffff;
+    --text-primary: #000000;
+    --text-secondary: #ffffff;
+    --text-bg: #07436e;
+    --svg-fill: #000000;
+*/
+
 :root {
     --body-bg: #303A52;
     --panel-bg: #39445F;
@@ -7,6 +27,7 @@
     --text-primary: #ffffff;
     --text-secondary: #A5B2D3;
     --text-bg: #FC85AE;
+    --svg-fill: #ffffff;
 }
 
 * {
@@ -58,7 +79,7 @@ h3 {
 }
 
 span {
-    color: var(--text-primary);
+    color: var(--text-bg);
     font-weight: bolder;
     font-size: 1.2em;
 }
@@ -95,6 +116,10 @@ nav p {
     margin-bottom: 0;;
 }
 
+#nav-intro {
+    color: var(--text-bg);
+}
+
 nav li a{
     font-size: 1.2em;
     padding: .8em 1em;
@@ -119,6 +144,10 @@ header {
 svg {
     width: 1.5em;
     cursor: pointer;
+}
+
+path {
+    fill: var(--svg-fill);
 }
 
 .logo1 {
@@ -146,6 +175,7 @@ svg {
 }
 
 p {
+    font-size: 1.2em;
     line-height: 1.6em;
 }
 
