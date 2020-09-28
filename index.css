@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
-/*body background: #303A52
-nav background: #2C354A
-panel background: #39445F
-text color: white
-text color/button backgound: #FC85AE*/
+:root {
+    --body-bg: #303A52;
+    --panel-bg: #39445F;
+    --nav-bg: #2C354A;
+    --text-primary: #ffffff;
+    --text-secondary: #A5B2D3;
+    --text-bg: #FC85AE;
+}
 
 * {
     box-sizing: border-box;
@@ -17,9 +20,9 @@ html, body {
 
 /*======= GENERAL STYLE =======*/
 body {
-    background: #303A52;
+    background: var(--body-bg);
     font-family: 'Nunito', sans-serif;
-    color: #A5B2D3;
+    color: var(--text-secondary);
     padding: .5em;
     height: 100vh;
     text-align:center;
@@ -37,16 +40,16 @@ li {
 a {
     padding: 0;
     text-decoration: none;
-    color: white;
+    color: var(--text-primary);
 }
 
 h1 {
-    color: white;
+    color: var(--text-primary);
     margin-top: 1em;
 }
 
 h3 {
-    color: #FC85AE;
+    color: var(--text-bg);
     font-size: 1.5em;
 }
 
@@ -55,7 +58,7 @@ h3 {
 }
 
 span {
-    color: white;
+    color: var(--text-primary);
     font-weight: bolder;
     font-size: 1.2em;
 }
@@ -71,7 +74,7 @@ img {
 nav {
     position: fixed;
     visibility: hidden;
-    background: #2C354A;
+    background: var(--nav-bg);
     top: 0;
     left: 0;
     width: 80%;
@@ -99,7 +102,7 @@ nav li a{
 }
 
 nav li a:hover{
-    color: #FC85AE;
+    color: var(--text-bg);
 }
 /*======= HEADER =======*/
 header {
@@ -110,7 +113,7 @@ header {
 
 #name {
     text-decoration: underline;
-    text-decoration-color: #FC85AE;
+    text-decoration-color: var(--text-bg);
 }
 
 svg {
@@ -125,18 +128,18 @@ svg {
 
 .left-btn {
     margin-left: auto;
-    background: #FC85AE;
+    background: var(--text-bg);
     padding: .2em .4em;
     border-radius: .2em;
     font-size: .9em;
-    color: #303A52;
+    color: var(--body-bg);
     font-weight: bold;
 }
 
 /*======= MAIN =======*/
 
 .panel {
-    background: #39445F;
+    background: var(--panel-bg);
     border-radius: .3em;
     padding: 0.5em 1em;
     margin-bottom: 2em;
@@ -153,7 +156,7 @@ p {
 
 .project-btn {
     padding: 0.5em 1em;
-    border: 1px solid #FC85AE;
+    border: 1px solid var(--text-bg);
     background: transparent;
     border-radius: 0.5em;
     font-size: 0.7em;
@@ -165,9 +168,8 @@ p {
 }
 
 .project-btn:hover{
-    background: #FC85AE;
     font-weight: bolder;
-    border: 1px solid white;
+    border: 1px solid var(--text-bg);
 }
 
 /*=========== MEDIA QUERY =========*/
