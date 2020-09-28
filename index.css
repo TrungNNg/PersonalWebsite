@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/*======= GENERAL STYLE =======*/
+body {
+    background: #3b4acd;
+    color: #A5B2D3;
+    padding: 0.5em;
+    font-family: serif;
+    height: 100vh;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+svg {
+    width: 1.8em;
+}
+
+/*======= NAV BAR =======*/
+nav {
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    opacity: 0;
+    text-align: center;
+}
+
+/*======= HEADER =======*/
+
+
+/*======= MAIN =======*/
+
