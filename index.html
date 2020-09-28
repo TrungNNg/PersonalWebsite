@@ -8,15 +8,17 @@
 </head>
 <body>
     <nav id="nav">
-        <svg viewBox="0 0 32 37" id="exit-btn">
-            <path id="back" d="M15.9,4.492a3,3,0,0,1,5.194,0L34.4,27.5A3,3,0,0,1,31.8,32H5.2a3,
-            3,0,0,1-2.6-4.5Z" transform="translate(0 37) rotate(-90)" fill="#fff"/>
-        </svg>
-        <p>Trung Ng's portfolio</p>
+        <div class="inner-wrapper">
+            <svg viewBox="0 0 32 37" id="exit-btn">
+                <path id="back" d="M15.9,4.492a3,3,0,0,1,5.194,0L34.4,27.5A3,3,0,0,1,31.8,32H5.2a3,
+                3,0,0,1-2.6-4.5Z" transform="translate(0 37) rotate(-90)" fill="#fff"/>
+            </svg>
+            <p>Trung Ng's portfolio</p>
+        </div>
         <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
@@ -27,13 +29,13 @@
             29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S
             29.104,22,28,22z"/>
         </svg>
-        <a href="#">Trung Ng</p>
-        <a href="#">Contact Info</a>
+        <a href="#" class="logo1">Trung Ng</a>
+        <a class="left-btn" href="#">Contact Info</a>
     </header>
 
     <main>
         <h1>About Me</h1>
-        <section>
+        <section class="panel">
         <p>
             Hello, my name is Trung Ng. (Mike Ng) for simpler pronounce.<br/>I'm a self-learning
                 software engineer, who is currently dedicate to Front-end development with Javascr
@@ -43,7 +45,7 @@
         </section>
 
         <h1>Skills</h1>
-        <section>
+        <section class="panel">
             <ul>
                 <li>
                     <h3>Image</h3>
@@ -75,7 +77,7 @@
         <div>
             <div>
                 <h1>My Projects</h1>
-                <section>
+                <section class="panel">
                     <button><a href="#">View my projects</a></button>
                 </section>
             </div>

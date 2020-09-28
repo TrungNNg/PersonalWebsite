@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -9,40 +11,46 @@ html, body {
 
 /*======= GENERAL STYLE =======*/
 body {
-    background: #3b4acd;
+    background: #303A52;
+    font-family: 'Nunito', sans-serif;
     color: #A5B2D3;
-    padding: 0.5em;
-    font-family: serif;
+    padding: .5em;
     height: 100vh;
-    text-align: center;
+    text-align:center;
 }
 
 ul{
+    padding: 0;
     list-style: none;
 }
 
 a {
+    padding: 0;
     text-decoration: none;
+    color: white;
 }
 
-svg {
-    width: 1.5em;
-    cursor: pointer;
+h1 {
+    color: white;
+}
+
+.inner-wrapper {
+    padding: 1em;
 }
 
 /*======= NAV BAR =======*/
 nav {
     position: fixed;
     visibility: hidden;
-    background: #576483;
+    background: #2C354A;
     top: 0;
     left: 0;
     width: 80%;
     height: 100vh;
     transform: translateX(-50%);
-    transition: 0.3s;
     opacity: 0;
-    text-align: center;
+    transition: 0.3s;
+    text-align: left;
 }
 
 .nav-open{
@@ -51,8 +59,53 @@ nav {
     transform: translateX(0);
 }
 
-/*======= HEADER =======*/
+nav p {
+    margin-bottom: 0;;
+}
 
+nav li a{
+    font-size: 1.2em;
+    padding: .8em 1em;
+    display: block;
+}
+
+/*======= HEADER =======*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    width: 1.5em;
+    cursor: pointer;
+}
+
+.logo1 {
+    font-weight: bold;
+    margin: 0 1em;
+}
+
+.left-btn {
+    margin-left: auto;
+    background: #FC85AE;
+    padding: .2em .4em;
+    border-radius: .2em;
+    font-size: .9em;
+    color: #303A52;
+    font-weight: bold;
+}
 
 /*======= MAIN =======*/
+
+.panel {
+    background: #39445F;
+    border-radius: .3em;
+    padding: 0.5em 1em;
+    margin-bottom: 2em;
+}
+
+p {
+    line-height: 1.6em;
+}
 
