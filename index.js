@@ -43,7 +43,7 @@ toggle.addEventListener('click', () => {
     if(isDarkMode){
         toggle.innerText = 'Dark Theme';
         root.style.setProperty('--body-bg', '#ffffff');
-        root.style.setProperty('--panel-bg', '#6baec5');
+        root.style.setProperty('--panel-bg', '#4a73db');
         root.style.setProperty('--nav-bg', '#f5f5f5');
         root.style.setProperty('--text-primary', '#000000');
         root.style.setProperty('--text-secondary', '#ffffff');
@@ -57,7 +57,7 @@ toggle.addEventListener('click', () => {
         root.style.setProperty('--nav-bg', '#2C354A');
         root.style.setProperty('--text-primary', '#ffffff');
         root.style.setProperty('--text-secondary', '#A5B2D3');
-        root.style.setProperty('--text-bg', '#FC85AE');
+        root.style.setProperty('--text-bg', '#56b3ca');
         root.style.setProperty('--svg-fill', '#ffffff');
         isDarkMode = true;
     }

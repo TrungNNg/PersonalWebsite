@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trung's portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -16,9 +16,9 @@
             <p id="nav-intro">Trung N. Ng's Portfolio</p>
         </div>
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -29,7 +29,7 @@
             29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S
             29.104,22,28,22z"/>
         </svg>
-        <a href="#" class="logo1">Location: NewYork</a>
+        <a class="logo">Location: NewYork</a>
         <a id="toggle-theme" class="left-btn" href="#">Light Theme</a>
     </header>
 
@@ -61,45 +61,57 @@
         </section>
 
         <h1>Skills I'm Learning</h1>
-            <section class="panel">
-                <p>My learning journey helps me discovered multiple exciting
-                     technologies I want to learn. <span>Typescript</span>, a
-                       better Javascript. <span>Redux</span> or <span>MobX</span> are two ways for
-                        state management in large application. <span>GraphQL</span>, a
-                         replacement for RESTapi.<span> JAMstack</span>, since serverless will be the future. WebAssembly, this technology is completely change web application development.
-                          And finally, <span>Machine Learning</span>.
-                </p> 
-            </section>
+        <section class="panel">
+            <p>My learning journey helps me discovered multiple exciting
+                    technologies I want to learn. <span>Typescript</span>, a
+                    better Javascript. <span>Redux</span> or <span>MobX</span> are two ways for
+                    state management in large application. <span>GraphQL</span>, a
+                        replacement for RESTapi.<span> JAMstack</span>, since serverless will be the future. WebAssembly, this technology is completely change web application development.
+                        And finally, <span>Machine Learning</span>.
+            </p> 
+        </section>
+
+        <h1 id="work">My Projects</h1>
+        <section class="panel projects">
+            <div class="project-container">
+                <h3 class="project-header">Netflix Clone</h3>
+                <img class="project-image" src="./images/netflix-clone.png">
+                <a class="project-link" target="_blank" href="https://netflix-clone-e128e.web.app/">Click here to view in browser</a>
+                <p>A Netflix clone using React for front-end and Firebase for back-end.
+                    User can create account and log-in using email. This project is part of my course.
+                 </p>
+            </div>
+    
+            <div class="project-container">
+                <h3 class="project-header">Hacker News Clone</h3>
+                <img class="project-image" src="./images/hacker-news.png">
+                <a class="project-link" target="_blank" href="https://hacker-news-9ded7.web.app/">Click here to view in browser</a>
+                <p>A Hacker News clone using Hacker News API to fetch stories. User can search using 
+                    search box, or sort stories by views / refences.
+                </p>
+            </div>
+        </section>
+
         <div>
-            <div>
-                <h1>My Projects</h1>
-                <section class="panel project-panel">
-                    <div>
-                        <a class="project-btn" href="#">View my projects</a>
-                    </div>
-                </section>
-            </div>
-            <div>
-                <h1>Contact</h1>
-                <ul class="data">
-                    <li>
-                        <h3>Github</h3>
-                        <a href=""><img src="./images/github.png"></a>
-                    </li>
-                    <li>
-                        <h3>Resume</h3>
-                        <a href="#"><img src="./images/resume.png"></a>
-                    </li>
-                    <li>
-                        <h3>Linkedin</h3>
-                        <a href="#"><img src="./images/linkedin.png"></a>
-                    </li>
-                    <li>
-                        <h3>E-mail</h3>
-                        <a href="#"><img src="./images/email.png"></a>
-                    </li>
-                </ul>
-            </div>
+            <h1 id="contact">Contact</h1>
+            <ul class="data">
+                <li>
+                    <h3>Github</h3>
+                    <a href="https://github.com/TrungNNg" target="_blank"><img src="./images/github.png"></a>
+                </li>
+                <li>
+                    <h3>Resume</h3>
+                    <a href="#"><img src="./images/resume.png"></a>
+                </li>
+                <li>
+                    <h3>Linkedin</h3>
+                    <a target="_blank" href="https://www.linkedin.com/in/trung-nguyen-a6b4391a6/"><img src="./images/linkedin.png"></a>
+                </li>
+                <li>
+                    <h3>E-mail</h3>
+                    <a href="mailto:tnguy384@mail.ccsf.edu"><img src="./images/email.png"></a>
+                </li>
+            </ul>
         </div>
     </main>
     <script src="./index.js"></script>
