@@ -36,7 +36,6 @@ exit.addEventListener('click', function(){
 //Change theme
 const toggle = document.getElementById('toggle-theme');
 const root = document.documentElement;
-
 let isDarkMode = true;
 
 toggle.addEventListener('click', () => {
