@@ -1,3 +1,3 @@
-# Trung's Porfolio Website.
+Trung
 
 [Live Site](https://www.trungn.com/)
